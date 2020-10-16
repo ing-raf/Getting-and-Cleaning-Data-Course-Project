@@ -1,10 +1,3 @@
----
-title: "README"
-author: "Raffaele Martino"
-date: "10/16/2020"
-output: html_document
----
-
 The `run_analysis.R` is found in the root of the repository, while the original Samsung data is under the `/data` directory. The output daata set is called `output_data_set.txt` and is available under the `/data` directory. Apart from `output_data_set.txt`, all other files and folders under the `/data` directory come from the original data set.
 
 # Preliminary operations
