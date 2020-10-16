@@ -1,0 +1,39 @@
+---
+title: "CodeBook"
+author: "Raffaele Martino"
+date: "10/16/2020"
+output: html_document
+---
+
+# Variables in the output data set
+
+Variables in the output data set comes from the original Samsung data, available in the data folder of the repository. The codebook of the original Samsung data is available in the `data/features_info.txt` file. The original data comes from gyroscope and accelerometer of a smartwatch weared by a number of subjects (30) while performing some activities (6). The original data sets contains a number of estimates for each measurement, only the mean and standard deviation for each measurement are selected for constructing the output data set.
+
+The output data set contains, for each mean and standard deviation from the original data set, the average for each subject and each activity.
+
+# Details of the variables
+
+The first two variaables in the data set are
+
+* `subject`: the volunteer who performed the experiment
+* `activity`: the activity performed by the volunteer
+
+All the other variables are prefixed with `averaged-`, since they represent the average over all the observations of each of subject performing each activity. Each variable is also suffixed with `-mean` or `-std` if it represents the estimated mean or standard deviation of the corresponding signal. 3-dimensional signals are represented by 3 different variables, suffixed `-X`, `-Y` and `-Z` for the X, Y, and Z direction respectively. The list of signals is the following:
+
+* `Time-BodyAcceleration-XYZ`: Body acceleration, in the time domain
+* `Time-GravityAcceleration-XYZ`: Gravity acceleration, in the time domain
+* `Time-BodyAccelerationJerk-XYZ`: Derivative of the body acceleration, in the time domain
+* `Time-BodyAngularVelocity-XYZ`: Body angular velocity, in the time domain
+* `Time-BodyAngularVelocityJerk-XYZ`: Derivative of the body angular velocity, in the time domain
+* `Time-BodyAccelerationMagnitude`: Magnitude of the body acceleration vector in the time domain
+* `Time-GravityAccelerationMagnitude`: Magnitude of the gravity acceleration vector in the time domain
+* `Time-BodyAccelerationJerkMagnitude`: Magnitude of the derivative of the acceleration vector in the time domain
+* `Time-BodyAngularVelocityMagnitude`: Magnitude of the angular velocity vector in the time domain
+* `Time-BodyAngularVelocityJerkMagnitude`: Magnitude of the derivative of the angular velocity vector in the time domain
+* `Frequency-BodyAcceleration-XYZ`: Body acceleration, in the frequency domain
+* `Frequency-BodyAccelerationJerk-XYZ`: Derivative of the body acceleration, in the frequency domain
+* `Frequency-BodyAngularVelocity-XYZ`: Body angular velocity, in the frequency domain
+* `Frequency-BodyAccelerationMagnitude`: Magnitude of the body acceleration vector in the frequency domain
+* `Frequency-BodyAccelerationJerkMagnitude`: Magnitude of the derivative of the body acceleration vector in the frequency domain
+* `Frequency-BodyAngularVelocityMagnitude`: Magnitude of the body angular velocity vector in the frequency domain
+* `Frequency-BodyAngularVelocityJerkMagnitude`: Magnitude of the derivative of the body angular velocity vector in the frequency domain
